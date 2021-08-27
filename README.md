@@ -1,3 +1,4 @@
+![Screenshot_1630093878](https://user-images.githubusercontent.com/81760629/131181947-de55be91-8107-466a-9620-3f11c65455b9.png)
 # blue_cross
 
 A new Flutter project.
