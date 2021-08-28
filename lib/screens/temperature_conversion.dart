@@ -20,7 +20,6 @@ class TemperatureConversionScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Card(
-            // color: Colors.green,
             child: Container(
               padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width,

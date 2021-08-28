@@ -42,7 +42,6 @@ class History with ChangeNotifier {
             historyItems['datetime'],
           ),
           value: historyItems['value'],
-          // id: orderId,
         ),
       );
     });

@@ -13,20 +13,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-        create: (context) => History(),
-        child: MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            primarySwatch: Colors.red,
-            secondaryHeaderColor: Colors.red,
-          ),
-          home: LengthConversionScreen(),
-          routes: {
-            LengthConversionScreen.routeName: (ctx) => LengthConversionScreen(),
-            TemperatureConversionScreen.routeName: (ctx) =>
-                TemperatureConversionScreen(),
-            HistoryScreen.routeName: (ctx) => HistoryScreen(),
-          },
-        ));
+      create: (context) => History(),
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+          secondaryHeaderColor: Colors.red,
+        ),
+        home: LengthConversionScreen(),
+        routes: {
+          LengthConversionScreen.routeName: (ctx) => LengthConversionScreen(),
+          TemperatureConversionScreen.routeName: (ctx) =>
+              TemperatureConversionScreen(),
+          HistoryScreen.routeName: (ctx) => HistoryScreen(),
+        },
+      ),
+    );
   }
 }
