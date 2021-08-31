@@ -26,10 +26,7 @@ class HistoryListTile extends StatelessWidget {
         if (from == 'inches') Text('inches'),
         if (from == 'feet') Text('feet'),
         if (from == 'cm') Text('centimeters'),
-
-        // if (from != 'dc' || from != 'df') Text(from + ' '),
         Text(' to '),
-
         if (to == 'dc') Text('\u2103'),
         if (to == 'df') Text('\u2109'),
         if (to == 'inches') Text('inches'),

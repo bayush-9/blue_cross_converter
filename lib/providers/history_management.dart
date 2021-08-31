@@ -52,7 +52,7 @@ class History with ChangeNotifier {
   Future<void> deleteHistory() async {
     final url = Uri.parse(
         'https://blue-cross-68bcf-default-rtdb.asia-southeast1.firebasedatabase.app/history.json');
-    final response = http.delete(url);
+    await http.delete(url);
     _history.clear();
     notifyListeners();
   }
@@ -61,7 +61,7 @@ class History with ChangeNotifier {
     final url = Uri.parse(
         'https://blue-cross-68bcf-default-rtdb.asia-southeast1.firebasedatabase.app/history.json');
     try {
-      final response = await http.post(
+      await http.post(
         url,
         body: json.encode({
           'from': _newHistoryItem.from,
